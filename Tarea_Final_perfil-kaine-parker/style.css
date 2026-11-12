@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: whitesmoke;
+    display:grid;
+    place-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%) ;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:hsl(0, 0%, 12%) ;
+    border:3px solid;
+    border-radius: 1rem;
+    border-color: hsl(357, 78%, 48%);    
+    padding:1rem;
+    width: 350px;
+
+}
+.subt{
+    font-weight: 600;
+    color: hsl(358, 100%, 65%);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.text{
+    font-weight: 400;
+}
+
+.avatar{
+    margin:1rem;
+    border-radius: 50%;
+    width: 100px;
+}
+
+.botones{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:1rem;
+    margin:1rem;   
+}
+
+button{
+    background-color: hsl(0, 0%, 20%);
+    color:whitesmoke;
+    padding:1rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    font-weight: 700;
+    width: 100%;
+}
+
+button:hover{
+    background-color: hsl(358, 100%, 65%);
+}
