@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,6 +13,10 @@ body{
     place-content: center;
     height: 100vh;
     background-color: hsl(0, 0%, 8%) ;
+    grid-template-columns: repeat(2,auto);
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .card{
@@ -64,4 +68,36 @@ button{
 
 button:hover{
     background-color: hsl(358, 100%, 65%);
+}
+
+button:focus-visible{
+    background-color: hsl(357, 78%, 48%);
+    border: 1px solid white;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 20%);
+  color: rgb(20, 19, 19); 
+  text-decoration: none;
+}
+
+.social a:hover{
+    background-color: hsl(357, 78%, 48%);
+}
+.social a:focus-visible{
+    background-color: hsl(357, 78%, 48%);
+    border: 1px solid white;
 }
